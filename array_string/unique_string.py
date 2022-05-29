@@ -1,4 +1,8 @@
 # Bad practice
+"""
+Implement a algorithm to determine if a string has all unique characters.
+What if you cannot use additional data structures.
+"""
 
 def is_unique_string(string): 
     """Find Time and space complexity

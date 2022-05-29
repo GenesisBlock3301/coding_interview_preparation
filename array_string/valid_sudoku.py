@@ -1,3 +1,5 @@
+#https://leetcode.com/problems/valid-sudoku/
+
 def isValid(board):
     row = [set() for _ in range(9)]
     col = [set() for _ in range(9)]

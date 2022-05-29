@@ -1,3 +1,11 @@
+"""There are three types of edits canbe performed on strings: 
+insert a character, remove a character or replace a character,
+Given two strings, write a function to check if they are one edit
+or zero edit away. 
+pale, ple -> true
+pales, pale -> true
+pale, bake -> false
+"""
 def replace(string1: str,string2:str) -> bool:
     found_difference = False
     for i in range(0,len(string1)):

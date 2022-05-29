@@ -1,4 +1,7 @@
-
+"""
+ Given two strings, write a method to decide if one is a permutation
+ of the other.
+"""
 def permutation(s,t) -> bool:
     """Permutation means two different string but same length
     but they consist of same characters.
@@ -7,7 +10,6 @@ def permutation(s,t) -> bool:
         return False
     return sorted(s) == sorted(t)
 
-# print(permutation("nas","san"))
 
 def efficient_permutation(s,t) -> bool:
     """Permutation means two different string but same length

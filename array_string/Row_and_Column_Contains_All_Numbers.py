@@ -1,3 +1,6 @@
+"""
+https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/
+"""
 def isValid(matrix):
     rows = [set() for _ in range(len(matrix))]
     cols = [set() for _ in range(len(matrix))]

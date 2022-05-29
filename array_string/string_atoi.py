@@ -1,5 +1,4 @@
-from cgitb import reset, strong
-
+#https://leetcode.com/problems/string-to-integer-atoi/
 
 def string_to_atoi(s):
     result = 0
