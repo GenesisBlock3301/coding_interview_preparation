@@ -1,4 +1,4 @@
-#https://leetcode.com/problems/valid-sudoku/
+# https://leetcode.com/problems/valid-sudoku/
 
 def isValid(board):
     row = [set() for _ in range(9)]
