@@ -25,4 +25,15 @@ class Solution(object):
             if len(window - countP) == 0:
                 ans.append(i)
 
+def findAnagrams(s, p):
+    m, n = len(s), len(p)
+    countP = Counter(p)
+    ans = list()
+    for i in range(m-n+1):
+        if len(Counter(s[i:n])-countP) == 0:
+            ans.append(i)
+    return ans
 
+s = "cbaebabacd"
+p = "abc"
+print(findAnagrams(s,p))
