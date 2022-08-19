@@ -8,13 +8,12 @@ def numIslands(grid):
         for k in range(col):
             if grid[i][k] == "1":
                 dfs(grid, i, k)
-                count+=1
+                count += 1
     return count
 
 
 def dfs(grid, i, j):
-    if i < 0 or j < 0 or i >= len(grid)\
-            or j >= len(grid[0]) or grid[i][j] != "1":
+    if i < 0 or j < 0 or i >= len(grid) or j >= len(grid[0]) or grid[i][j] != "1":
         return
     grid[i][j] = "#"
     dfs(grid, i + 1, j)
@@ -24,9 +23,9 @@ def dfs(grid, i, j):
 
 
 grid = [
-  ["1","1","1","1","0"],
-  ["1","1","0","1","0"],
-  ["1","1","0","0","0"],
-  ["0","0","0","0","0"]
+    ["1", "1", "1", "1", "0"],
+    ["1", "1", "0", "1", "0"],
+    ["1", "1", "0", "0", "0"],
+    ["0", "0", "0", "0", "0"]
 ]
 print(numIslands(grid))
