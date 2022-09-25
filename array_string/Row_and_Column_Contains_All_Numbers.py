@@ -9,8 +9,8 @@ def isValid(matrix):
     for r in range(len(matrix)):
         for c in range(len(matrix)):
             m = matrix[r][c]
-            if m >= 1 and m <= mx_n:
-                if (m in rows[r] or m in cols[c]):
+            if 1 <= m <= mx_n:
+                if m in rows[r] or m in cols[c]:
                     return False
             if len(rows) != len(cols):
                 return False
