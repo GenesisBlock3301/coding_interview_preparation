@@ -15,8 +15,7 @@ def string_to_atoi(s):
         start = 1
 
     for i in s[start:]:
-        print(i,start)
-        if not (ord(i) >= 48 and ord(i) <= 57):
+        if not (48 <= ord(i) <= 57):
             return result*mul
         result = (result*10)+(ord(i)-ord("0"))
         min_int_32 = 2 ** 31
@@ -28,4 +27,4 @@ def string_to_atoi(s):
     return result*mul
 
 
-print(string_to_atoi("+1"))
+print(string_to_atoi("4193 with words"))

@@ -3,7 +3,7 @@
 from operator import le
 
 
-arr = [1,2,3,4,5,6,7,8]
+arr = [1,2,3,4,5,6,7, 8]
 target = 3
 mid = (0+len(arr))/2
 """
