@@ -8,7 +8,6 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
     def preorder(self, root):
         if root:
             print(root.val, end=" ")
