@@ -14,6 +14,9 @@ def insert_binary_tree_node(arr, i, n):
     root = None
     if i < n:
         root = TreeNode(arr[i])
+        """
+        we just calculate level wise node, cuz every binary tree's node has only 2 adjacency node.
+        """
         root.left = insert_binary_tree_node(arr, 2 * i + 1, n)
         root.right = insert_binary_tree_node(arr, 2 * i + 2, n)
     return root
