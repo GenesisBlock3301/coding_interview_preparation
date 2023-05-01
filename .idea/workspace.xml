@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec3d66a-fb28-4c1d-97ee-6f6792ec4cdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/divide_&amp;_conquer/quick_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursion/add_even_odd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursion/binery_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/recursion/count_number_of_elements.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees/create_binary_search_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees/create_binary_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees/symmentic_tree.py" afterDir="false" />
+    <list default="true" id="5ec3d66a-fb28-4c1d-97ee-6f6792ec4cdd" name="Changes" comment="tree, divide &amp; conquer">
+      <change afterPath="$PROJECT_DIR$/complexity/2^n_time_and_space_complexity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complexity/log_n_time_&amp;_space_complexity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complexity/n_&amp;n^2_time_and_space_complexity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complexity/n_log_n_time_&amp;_space_complexity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/b-tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trees/binary_tree_level_order_traversal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/rec1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion/remove_element.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursion/remove_element.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trees/balanced_binary_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/trees/balanced_binary_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trees/priority_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/divide_&amp;_conquer/basic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_table/implementation-2.go" beforeDir="false" afterPath="$PROJECT_DIR$/hash_table/implementation-2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +23,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
+  <component name="GOROOT" url="file:///snap/go/10135" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_HOME_DIR$/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,15 +50,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/bs815/Desktop/coding_interview_preparation&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
@@ -71,126 +81,66 @@
       <recent name="$PROJECT_DIR$/trees" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_binary_tree">
-    <configuration name="binery_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="coding_interview_preparation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursion" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion/binery_search.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="count_number_of_elements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="coding_interview_preparation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/recursion" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion/count_number_of_elements.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
       <method v="2" />
     </configuration>
-    <configuration name="create_binary_search_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 2^n_time_and_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="coding_interview_preparation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trees_graphs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trees/create_binary_search_tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/complexity/2^n_time_and_space_complexity.go" />
       <method v="2" />
     </configuration>
-    <configuration name="create_binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="go build log_n_time_&amp;_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="coding_interview_preparation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trees" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trees/create_binary_tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/complexity/log_n_time_&amp;_space_complexity.go" />
       <method v="2" />
     </configuration>
-    <configuration name="quick_sort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="go build n_&amp;n^2_time_and_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="coding_interview_preparation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/divide_&amp;_conquer" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/divide_&amp;_conquer/quick_sort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/complexity/n_&amp;n^2_time_and_space_complexity.go" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.create_binary_tree" />
-        <item itemvalue="Python.create_binary_search_tree" />
-        <item itemvalue="Python.quick_sort" />
-        <item itemvalue="Python.binery_search" />
-        <item itemvalue="Python.count_number_of_elements" />
-      </list>
-    </recent_temporary>
+    <configuration name="go build n_log_n_time_&amp;_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="coding_interview_preparation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/complexity/n_log_n_time_&amp;_space_complexity.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build n_time_and_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="coding_interview_preparation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/complexity/n_time_and_space_complexity.go" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -220,7 +170,29 @@
       <workItem from="1667869513193" duration="1825000" />
       <workItem from="1667966091529" duration="4819000" />
       <workItem from="1668089373317" duration="1953000" />
+      <workItem from="1668308652731" duration="1898000" />
+      <workItem from="1668481679547" duration="14273000" />
+      <workItem from="1670169889253" duration="616000" />
+      <workItem from="1676561011098" duration="274000" />
+      <workItem from="1676990977264" duration="5782000" />
+      <workItem from="1677033231699" duration="1711000" />
+      <workItem from="1682735374616" duration="3758000" />
     </task>
+    <task id="LOCAL-00001" summary="tree, divide &amp; conquer">
+      <created>1668310650981</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668310650981</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tree, divide &amp; conquer">
+      <created>1668310785061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668310785061</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,80 +209,12 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/system_design_algorithm/token_bucket.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/system_design_algorithm/token_bucket.py</url>
-          <line>33</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/system_design_algorithm/token_bucket.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/system_design_algorithm/token_bucket.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hash_table/implementation-1.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/sorting_&amp;_searching/Merge_Intervals.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recursion/count_number_of_elements.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/recursion/count_number_of_elements.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tree, divide &amp; conquer" />
+    <option name="LAST_COMMIT_MESSAGE" value="tree, divide &amp; conquer" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$longest_palindrome.coverage" NAME="longest_palindrome Coverage Results" MODIFIED="1663398433546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$counting_sort.coverage" NAME="counting_sort Coverage Results" MODIFIED="1666540278903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_&amp;_searching" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$fixed_window_counter.coverage" NAME="fixed_window_counter Coverage Results" MODIFIED="1666372548730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/system_design_algorithm" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$token_bucket.coverage" NAME="token_bucket Coverage Results" MODIFIED="1666369514304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/system_design_algorithm" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$group_anagram.coverage" NAME="group_anagram Coverage Results" MODIFIED="1663393698005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$leaking_bucket.coverage" NAME="leaking_bucket Coverage Results" MODIFIED="1666371045709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/system_design_algorithm" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$factorial.coverage" NAME="factorial Coverage Results" MODIFIED="1667571209596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$check_sorted_0r_not.coverage" NAME="check_sorted_0r_not Coverage Results" MODIFIED="1667580353793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$string_atoi.coverage" NAME="string_atoi Coverage Results" MODIFIED="1664856528644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$basic.coverage" NAME="basic Coverage Results" MODIFIED="1667705158795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/divide_&amp;_conquer" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$sort_colors.coverage" NAME="sort_colors Coverage Results" MODIFIED="1666975036669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_&amp;_searching" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$constant_time.coverage" NAME="constant_time Coverage Results" MODIFIED="1666971455974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/complexity" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$count_number_of_elements.coverage" NAME="count_number_of_elements Coverage Results" MODIFIED="1667723519473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$3sum.coverage" NAME="3sum Coverage Results" MODIFIED="1663350853668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$create_binary_tree.coverage" NAME="create_binary_tree Coverage Results" MODIFIED="1667969677232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/trees" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$tower_of_hanoi.coverage" NAME="tower_of_hanoi Coverage Results" MODIFIED="1667580180350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$product_of_arrayexcept_self.coverage" NAME="product_of arrayexcept_self Coverage Results" MODIFIED="1664165427991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$implementation_1.coverage" NAME="implementation-1 Coverage Results" MODIFIED="1666457143252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_table" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$one_way.coverage" NAME="one_way Coverage Results" MODIFIED="1663401157160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$binery_search.coverage" NAME="binery_search Coverage Results" MODIFIED="1667728523487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1666538192624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_&amp;_searching" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$Merge_Intervals.coverage" NAME="Merge_Intervals Coverage Results" MODIFIED="1666548879570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting_&amp;_searching" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$find_anagram_from_string.coverage" NAME="find_anagram_from-string Coverage Results" MODIFIED="1663354436100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$permutation_check.coverage" NAME="permutation_check Coverage Results" MODIFIED="1663401160810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$Row_and_Column_Contains_All_Numbers.coverage" NAME="Row_and_Column_Contains_All_Numbers Coverage Results" MODIFIED="1663401262328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$add_even_odd.coverage" NAME="add_even_odd Coverage Results" MODIFIED="1667668011713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recursion" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$quick_sort.coverage" NAME="quick_sort Coverage Results" MODIFIED="1667740216884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/divide_&amp;_conquer" />
-    <SUITE FILE_PATH="coverage/coding_interview_preparation$nex_greater.coverage" NAME="nex_greater Coverage Results" MODIFIED="1663398998281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array_string" />
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
