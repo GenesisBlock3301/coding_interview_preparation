@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ec3d66a-fb28-4c1d-97ee-6f6792ec4cdd" name="Changes" comment="tree, divide &amp; conquer">
-      <change afterPath="$PROJECT_DIR$/complexity/2^n_time_and_space_complexity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complexity/log_n_time_&amp;_space_complexity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complexity/n_&amp;n^2_time_and_space_complexity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complexity/n_log_n_time_&amp;_space_complexity.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/b-tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trees/binary_tree_level_order_traversal.py" afterDir="false" />
+    <list default="true" id="5ec3d66a-fb28-4c1d-97ee-6f6792ec4cdd" name="Changes" comment="time complexity">
+      <change afterPath="$PROJECT_DIR$/recursion/string_recursion.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recursion/sum_of_digit.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hash_table/implementation-2.go" beforeDir="false" afterPath="$PROJECT_DIR$/hash_table/implementation-2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,7 @@
       <recent name="$PROJECT_DIR$/trees" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build string_recursion.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="coding_interview_preparation" />
       <working_directory value="$PROJECT_DIR$" />
@@ -91,38 +86,12 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
-      <module name="coding_interview_preparation" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="DIRECTORY" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build 2^n_time_and_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="coding_interview_preparation" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/complexity/2^n_time_and_space_complexity.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build log_n_time_&amp;_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="coding_interview_preparation" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/complexity/log_n_time_&amp;_space_complexity.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build n_&amp;n^2_time_and_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="coding_interview_preparation" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/complexity/n_&amp;n^2_time_and_space_complexity.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build n_log_n_time_&amp;_space_complexity.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -141,6 +110,38 @@
       <filePath value="$PROJECT_DIR$/complexity/n_time_and_space_complexity.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build string_recursion.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="coding_interview_preparation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/recursion/string_recursion.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build sum_of_digit.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="coding_interview_preparation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/recursion/sum_of_digit.go" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="coding_interview_preparation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build string_recursion.go" />
+        <item itemvalue="Go Build.go build sum_of_digit.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -177,6 +178,8 @@
       <workItem from="1676990977264" duration="5782000" />
       <workItem from="1677033231699" duration="1711000" />
       <workItem from="1682735374616" duration="3758000" />
+      <workItem from="1682935677955" duration="715000" />
+      <workItem from="1683176743871" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="tree, divide &amp; conquer">
       <created>1668310650981</created>
@@ -192,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668310785061</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="time complexity">
+      <created>1682935786302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682935786302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,10 +221,32 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tree, divide &amp; conquer" />
-    <option name="LAST_COMMIT_MESSAGE" value="tree, divide &amp; conquer" />
+    <MESSAGE value="time complexity" />
+    <option name="LAST_COMMIT_MESSAGE" value="time complexity" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/recursion/sum_of_digit.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/recursion/sum_of_digit.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/recursion/string_recursion.go</url>
+          <line>20</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
