@@ -21,6 +21,6 @@ func SelectionSort(arr []int) []int {
 }
 
 func main() {
-	arr := []int{5, 3, 2, 1}
+	arr := []int{5, 2, 1, 3}
 	fmt.Println(SelectionSort(arr))
 }

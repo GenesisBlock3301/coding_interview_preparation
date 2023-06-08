@@ -13,7 +13,7 @@ def fibonacci2(nth):
     return fibonacci2(nth-2)+fibonacci2(nth-1)
 
 # arr = [0]
-nth = 10
+nth = 4
 # print(fibonacci1(0, 1, nth, arr))
 arr1 = []
 ans = fibonacci2(nth)
