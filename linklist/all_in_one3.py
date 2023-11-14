@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/sort-list/
 class ListNode:
 
-
     def __init__(self, val=0, next=None) -> None:
         self.val = val
         self.next = next
@@ -13,8 +12,6 @@ class ListNode:
 class LinkList:
     def __init__(self) -> None:
         self.head = None
-
-    
     """
     Write code to partition a linked list around a value x, such that all nodes less than
     all nodes less than x come from before all  nodes greater than or equal to x. If x is contain
@@ -22,9 +19,10 @@ class LinkList:
     element x can appear anywhere in the "right partition"; it does not need to appear the left
     and right partition.
     """
-    def partition(selfm ,head):
+
+    def partition(self, head):
         pass
-    
+
     """
     Implement an algorithm to delete a node in the middle(i.e, any node but the first and last
     node not necessary the exact middle) of singly link list, given only access to
@@ -66,13 +64,13 @@ class LinkList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next != None:
+            while current_node.next is not None:
                 current_node = current_node.next
             current_node.next = node
         return self.head
 
-    def insert_list(self, arr):
-        for element in arr:
+    def insert_list(self, _arr):
+        for element in _arr:
             self.append_to_tail(element)
         return self.head
 

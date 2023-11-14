@@ -1,10 +1,7 @@
-
-
-
 class ListNode:
-    def __init__(self, val=0, next=None) -> None:
+    def __init__(self, val=0, _next=None) -> None:
         self.val = val
-        self.next = next
+        self.next = _next
 
     def __str__(self) -> str:
         return str(self.val)
@@ -31,13 +28,13 @@ class LinkList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next != None:
+            while current_node.next is not None:
                 current_node = current_node.next
             current_node.next = node
         return self.head
 
-    def insert_list(self, arr):
-        for element in arr:
+    def insert_list(self, _arr):
+        for element in _arr:
             self.append_to_tail(element)
         return self.head
 
@@ -59,15 +56,17 @@ class LinkList:
                     s.add(current_node.val)
                     previous_node = current_node
                 current_node = current_node.next
+
     """
     input->1,2,3,3,4,4,5
     output -> 1,2,5
 
     """
+
     # def get_unique_list()
 
     def remove_all_duplicate(self):
-        dummy = ListNode(next=self.head)
+        dummy = ListNode(_next=self.head)
         itr = dummy
         current_node = self.head
         while current_node:
@@ -75,7 +74,7 @@ class LinkList:
             while current_node.next and current_node.next.val == current_node.val:
                 isUnique = False
                 current_node = current_node.next
-            
+
             if isUnique:
                 itr.next = current_node
                 itr = itr.next
@@ -83,7 +82,7 @@ class LinkList:
         itr.next = None
         self.head = dummy.next
         return self.head
-        
+
     """ 
     2. Revers exiting linklist
     """
@@ -92,7 +91,7 @@ class LinkList:
         previous_node = None
         current_node = self.head
         next_node = None
-        while current_node != None:
+        while current_node is not None:
             # print("==",current_node.val)
             next_node = current_node.next
             current_node.next = previous_node
@@ -118,15 +117,41 @@ class LinkList:
             current_node = current_node.next
         return self.head
 
-    # def kth_to_last_rec(self,k):
+
+def swap_pairs(A):
+    current_node = A
+    count = 0
+    prev_node = None
+    while current_node.next:
+        count += 1
+        if count % 2 == 0 and count == 2:
+            A = current_node
+            A.next = prev_node
+            current_node = current_node.next
+        elif count % 2 == 0:
+            temp_node = current_node
+            prev_node = temp_node
+            current_node = temp_node.next
+            prev_node.next = current_node
+        prev_node = current_node
+        current_node = current_node.next
+    return A
+
+
+def print_linklist(A):
+    current_node = A
+    while current_node.next:
+        print(current_node.val)
+        current_node = current_node.next
+    print(current_node.val)
 
 
 link_list = LinkList()
-arr = [1, 1, 1, 2, 3]
-link_list.insert_list(arr)
+arr = [1, 2, 3, 4]
+head = link_list.insert_list(arr)
 # link_list.remove_duplicate()
 # link_list.reverse()
-# print(link_list)
+head = swap_pairs(head)
 # print(link_list.kth_to_last(2))
-link_list.remove_all_duplicate()
-print(link_list)
+# link_list.remove_all_duplicate()
+print("====",print_linklist(head))

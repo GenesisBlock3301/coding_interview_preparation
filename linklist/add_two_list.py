@@ -1,10 +1,11 @@
-#https://leetcode.com/problems/add-two-numbers/
+# https://leetcode.com/problems/add-two-numbers/
 
 # Definition for singly-linked list.
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, _next=None):
         self.val = val
-        self.next = next
+        self.next = _next
+
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
@@ -13,8 +14,9 @@ class Solution:
         add = [int(x) for x in str(int("".join(arr1)[::-1]) + int("".join(arr2)[::-1]))[::-1]]
         head = self.create_link(add)
         return head
-    
-    def return_list(self,head):
+
+    @staticmethod
+    def return_list(head):
         temp = head
         arr = []
         while temp.next is not None:
@@ -22,9 +24,10 @@ class Solution:
             temp = temp.next
         arr.append(str(temp.val))
         return arr
-        
+
     # create link list
-    def create_link(self,elements):
+    @staticmethod
+    def create_link(elements):
         head = ListNode(elements[0])
         for element in elements[1:]:
             tem = head

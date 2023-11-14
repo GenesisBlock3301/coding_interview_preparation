@@ -1,8 +1,8 @@
 
 class Node:
-    def __init__(self, data=None, next=None) -> None:
+    def __init__(self, data=None, _next=None) -> None:
         self.data = data
-        self.next = next
+        self.next = _next
 
     def __str__(self) -> str:
         return str(self.data)
@@ -36,7 +36,7 @@ class LinkList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next != None:
+            while current_node.next is not None:
                 current_node = current_node.next
             current_node.next = node
         return self.head
@@ -50,7 +50,7 @@ class LinkList:
             1->2->3->4 DELETE 3
             """
             previous_node = None
-            while current_node.next != None:
+            while current_node.next is not None:
                 if current_node.data == data:
                     break
                 previous_node = current_node
