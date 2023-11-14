@@ -10,11 +10,13 @@
 - Compare with others value.
 - Then compare if MinimumIndex value larger than other swap both of them.
 - Time and Space complexity - **O(n^2) and O(1)**.
+- In place algo
 
 ### Insertion Sort:
 - Loop through 1 number value, and compare each other
 - Compare below all items and then place this value right place
 - Time and Space complexity - **O(n^2) and O(1)**.
+- In-place algo
 
 ### Merge sort:
 - First of all find mid and divide left and right.
