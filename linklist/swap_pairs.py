@@ -20,6 +20,7 @@ def swapPairs(A):
 
     return dummy.next
 
+
 # Example usage:
 # Create linked list
 # For Input 1: A = 1 -> 2 -> 3 -> 4
