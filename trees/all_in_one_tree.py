@@ -6,25 +6,25 @@ class TreeNode:
         self.right = right
 
 
-def pre_order(root):
-    if root:
-        print(root.val,end=" ")
-        pre_order(root.left)
-        pre_order(root.right)
+def pre_order(_root):
+    if _root:
+        print(_root.val, end=" ")
+        pre_order(_root.left)
+        pre_order(_root.right)
 
 
-def in_order(root):
-    if root:
-        in_order(root.left)
-        print(root.val,end=" ")
-        in_order(root.right)
+def in_order(_root):
+    if _root:
+        in_order(_root.left)
+        print(_root.val, end=" ")
+        in_order(_root.right)
 
 
-def post_order(root):
-    if root:
-        post_order(root.left)
-        post_order(root.right)
-        print(root.val,end=" ")
+def post_order(_root):
+    if _root:
+        post_order(_root.left)
+        post_order(_root.right)
+        print(_root.val, end=" ")
 
 
 root = TreeNode(10)

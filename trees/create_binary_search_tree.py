@@ -28,27 +28,27 @@ def in_order_tree(_root):
     print(_root.val)
     if _root.right:
         in_order_tree(_root.right)
+
+
 # https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 def sortedArrayToBST(nums):
     divide_array(nums)
+
 
 def divide_array(nums):
     if len(nums) == 1:
         return TreeNode(nums[0])
     if len(nums) == 0:
-        return  None
+        return None
 
-    mid = len(nums)//2
+    mid = len(nums) // 2
     root = TreeNode(nums[mid])
     root.left = divide_array(nums[:mid])
-    root.right = divide_array(nums[mid+1:])
+    root.right = divide_array(nums[mid + 1:])
     return root
 
 
-
-
-
-nums = [-10,-3,0,5,9]
+nums = [-10, -3, 0, 5, 9]
 # [0,-3,9,-10,null,5]
 print(sortedArrayToBST(nums))
 # root = TreeNode(4)
@@ -63,4 +63,3 @@ print(sortedArrayToBST(nums))
 # print(root.left.left)
 # print(root.left.right)
 # print(root.right.right)
-
