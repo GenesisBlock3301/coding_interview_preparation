@@ -1,22 +1,20 @@
 # https://leetcode.com/problems/basic-calculator-ii/
-def basic_cal(s):
+def basic_cal(_s):
     operator = "+"
     stack = []
     num = 0
-    s = s.strip()
+    _s = _s.strip()
     c = 0
-    for i in s:
+    for i in _s:
         if i.isdigit():
             num = num*10+int(i)
-        if i in "+-*/" or c == len(s)-1:
+        if i in "+-*/" or c == len(_s)-1:
             if operator == "+":
                 stack.append(num)
             elif operator == "-":
                 stack.append(-num)
             elif operator == "/":
                 v1 = stack.pop()
-                # print(v1, num)
-                # break
                 stack.append(int(v1/num))
             elif operator == "*":
                 v1 = stack.pop()
@@ -27,7 +25,7 @@ def basic_cal(s):
     return sum(stack)
 
 
-# s = "3+5/2"
-# s = " 3+5 / 2 "
-s = "42"
+# s = "30+55/22"
+# s = " 3+5 / 2+"
+s = "3+4"
 print(basic_cal(s))
