@@ -10,16 +10,16 @@ class TreeNode:
         return str(self.val)
 
 
-def insert_binary_tree_node(arr, i, n):
-    root = None
-    if i < n:
-        root = TreeNode(arr[i])
+def insert_binary_tree_node(_arr, i, _n):
+    _root = None
+    if i < _n:
+        _root = TreeNode(_arr[i])
         """
         we just calculate level wise node, cuz every binary tree's node has only 2 adjacency node.
         """
-        root.left = insert_binary_tree_node(arr, 2 * i + 1, n)
-        root.right = insert_binary_tree_node(arr, 2 * i + 2, n)
-    return root
+        _root.left = insert_binary_tree_node(_arr, 2 * i + 1, _n)
+        _root.right = insert_binary_tree_node(_arr, 2 * i + 2, _n)
+    return _root
 
 
 def in_order_tree(_root):
@@ -31,8 +31,8 @@ def in_order_tree(_root):
 
 
 class Solution:
-    def isSymmetric(self, root) -> bool:
-        return self.is_mirror(root, root)
+    def isSymmetric(self, _root) -> bool:
+        return self.is_mirror(_root, _root)
 
     def is_mirror(self, t1, t2):
         if t1 is None and t2 is None:
