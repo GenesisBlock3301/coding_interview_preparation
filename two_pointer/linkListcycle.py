@@ -26,7 +26,7 @@ class LinkList:
             if fast == slow:
                 return True
         return False
-    
+
     def cycle_check_medium(self, head):
         s = set()
         temp = head
@@ -34,7 +34,7 @@ class LinkList:
         while temp:
             if temp in s:
                 return f"tail connects to node index {c}"
-            c+=1
+            c += 1
             s.add(temp)
             temp = temp.next
         return "no cycle"
@@ -66,7 +66,7 @@ class LinkList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next != None:
+            while current_node.next is not None:
                 current_node = current_node.next
             current_node.next = node
         return self.head
