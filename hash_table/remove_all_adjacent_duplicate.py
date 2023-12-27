@@ -18,7 +18,7 @@ class Solution:
         for key, value in hash_map.items():
             if value % _k != 0:
                 filtered_val.append((key, value % _k))
-        return ''.join(char*count for char, count in filtered_val)
+        return ''.join(char * count for char, count in filtered_val)
 
 
 obj = Solution()
