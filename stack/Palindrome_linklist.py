@@ -32,7 +32,7 @@ class LinkList:
             self.head = node
         else:
             current_node = self.head
-            while current_node.next != None:
+            while current_node.next is not None:
                 current_node = current_node.next
             current_node.next = node
         return self.head
@@ -76,7 +76,7 @@ class LinkList:
         current_node = head
         next_node = None
         c = 0
-        while current_node != None:
+        while current_node is not None:
             c += 1
             if c == middle:
                 break
@@ -100,7 +100,7 @@ class LinkList:
         previous_node = None
         current_node = head
         next_node = None
-        while current_node != None:
+        while current_node is not None:
             next_node = current_node.next
             current_node.next = previous_node
             previous_node = current_node
