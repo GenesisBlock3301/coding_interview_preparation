@@ -1,28 +1,28 @@
 # https://leetcode.com/problems/longest-palindromic-substring/ 
 
-def longest_palindrome(s):
-    s = list(s)
-    if s == s[::-1]:
-        return "".join(s)
-    n = len(s)
-    palindroms = []
+def longest_palindrome(_s):
+    _s = list(_s)
+    if _s == _s[::-1]:
+        return "".join(_s)
+    n = len(_s)
+    palindromes = []
     arr = []
     for i in range(n):
-        arr.append(s[i])
-        for k in range(i+1,n):
-            arr.append(s[k])
+        arr.append(_s[i])
+        for k in range(i + 1, n):
+            arr.append(_s[k])
             l = "".join(arr)
-            if l not in palindroms:
+            if l not in palindromes:
                 if l == l[::-1]:
-                    palindroms.append(l)
+                    palindromes.append(l)
         arr = []
-    print(palindroms)
+    print(palindromes)
 
-    if palindroms:
-        maxList = max(palindroms, key = len)
+    if palindromes:
+        maxList = max(palindromes, key=len)
         return "".join(maxList)
     else:
-        return s[0]
+        return _s[0]
 
 
 # s = "babad"

@@ -1,10 +1,10 @@
 
-def greedy(data):
+def greedy(_data):
     arr = list()
-    for i in data:
-        for k in data:
+    for i in _data:
+        for k in _data:
             if i != k:
-                val = data.get(i)[-1] + data.get(k)[-1]
+                val = _data.get(i)[-1] + _data.get(k)[-1]
                 if val <= 35:
                     arr.append(i)
     return arr
