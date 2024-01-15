@@ -1,4 +1,3 @@
-
 def is_distination(destination):
     return destination == "Dhaka"
 
@@ -18,6 +17,7 @@ def search_short_path(graph, name):
                 search_queue += graph[district]
                 visited.append(district)
     return False
+
 
 graph = dict()
 graph["Jamalpur"] = ["Mymensingh", "Tangail"]

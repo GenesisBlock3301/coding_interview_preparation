@@ -1,7 +1,6 @@
-
 class Graph:
 
-    def __init__(self,size):
+    def __init__(self, size):
         self.adjacency_matrix = [[0 for _ in range(size)] for i in range(size)]
         self.size = size
 
@@ -13,6 +12,7 @@ class Graph:
             self.adjacency_matrix[v2][v1] = 1
 
         # Remove edges
+
     def remove_edge(self, v1, v2):
         if self.adjMatrix[v1][v2] == 0:
             print("No edge between %d and %d" % (v1, v2))
@@ -31,12 +31,11 @@ class Graph:
         return self.size
 
 
-
 g = Graph(5)
 g.add_edge(0, 1)
 g.add_edge(0, 2)
 g.add_edge(1, 2)
 g.add_edge(2, 0)
 g.add_edge(2, 3)
-print(g.adjacency_matrix,len(g))
+print(g.adjacency_matrix, len(g))
 g.print_matrix()

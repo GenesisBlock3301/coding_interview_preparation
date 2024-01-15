@@ -18,7 +18,8 @@ def DFS(graph, starting_point, visited=None):
                 DFS(graph, next, visited)
     return visited
 
-# second shortest path problem.
+
+# second-shortest path problem.
 
 graph = dict()
 graph["Jamalpur"] = ["Mymensingh", "Tangail"]
@@ -26,4 +27,4 @@ graph["Mymensingh"] = ["Gazipur"]
 graph["Dhaka"] = []
 graph["Tangail"] = ["Dhaka"]
 graph["Gazipur"] = ["Dhaka"]
-print(DFS(graph,"Jamalpur"))
+print(DFS(graph, "Jamalpur"))
