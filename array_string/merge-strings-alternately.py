@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/merge-strings-alternately/
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         w1_len, w2_len = len(word1), len(word2)

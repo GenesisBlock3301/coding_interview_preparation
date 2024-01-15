@@ -1,12 +1,13 @@
 # https://leetcode.com/problems/rank-transform-of-an-array/
-from collections import OrderedDict
+
+
 def transform_rank(nums):
     dic = dict()
     c = 0
     n = len(nums)
     for i in sorted(nums):
         if i not in dic:
-            c+=1
+            c += 1
             dic[i] = c
 
     # val = []
@@ -19,5 +20,5 @@ def transform_rank(nums):
 
 
 # nums = [40,10,20,30]
-nums = [100,100,100]
+nums = [100, 100, 100]
 print(transform_rank(nums))
