@@ -23,11 +23,12 @@ class Solution:
             dp[s] = is_can_break
         return dp[s]
 
+
 # Example usage
 solution = Solution()
 # s = "leetcode"
 # wordDict = ["leet", "code"]
 
 s = "catsandog"
-wordDict = ["cats","dog","sand","and","cat"]
+wordDict = ["cats", "dog", "sand", "and", "cat"]
 print(solution.wordBreak(s, wordDict))

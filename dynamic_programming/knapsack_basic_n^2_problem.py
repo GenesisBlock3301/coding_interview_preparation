@@ -1,4 +1,3 @@
-
 def greedy(_data):
     arr = list()
     for i in _data:
@@ -8,6 +7,7 @@ def greedy(_data):
                 if val <= 35:
                     arr.append(i)
     return arr
+
 
 data = {
     "stereo": [3000, 30],
