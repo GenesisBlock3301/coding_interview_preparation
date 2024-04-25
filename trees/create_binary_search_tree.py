@@ -48,15 +48,14 @@ def divide_array(nums):
     return root
 
 
-nums = [-10, -3, 0, 5, 9]
-# [0,-3,9,-10,null,5]
-print(sortedArrayToBST(nums))
-# root = TreeNode(4)
-# insert_data(root, 2)
-# insert_data(root, 5)
-# insert_data(root, 1)
-# insert_data(root, 3)
-# insert_data(root, 6)
+# nums = [-10, -3, 0, 5, 9]
+# # [0,-3,9,-10,null,5]
+# print(sortedArrayToBST(nums))
+root = TreeNode(10)
+for i in [5, 17, 3, 7, 12, 19, 1, 4, 13]:
+    insert_data(root, i)
+print(in_order_tree(root))
+
 # print(root)
 # print(root.left)
 # print(root.right)

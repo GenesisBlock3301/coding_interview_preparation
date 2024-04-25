@@ -419,8 +419,17 @@ Vehicle start_engin
 Vehicle start_engin
 Car Starting
 ```
-In above code create a `Vechicle` abstraction class, inside this, we just derived method, not exist any implementation.
+In above code create a `Vechicle` abstract class, inside this we just derived method, not exist any implementation.
 Then we just inherit this class into concrete class like `Car` & `Bus`. 
 In Python, there hasn't any explicitly defined interface, but using abstract class we can get this flavour. 
 Abstract is not an interface, because inside abstract class we create concrete methods, but in interface this is 
 not possible.
+
+
+
+In conclusion, `object-oriented programming (OOP)` in Python empowers developers to organize code efficiently, enhance 
+code reusability, and promote a modular approach. Classes and objects encapsulate data and behavior, fostering a clearer
+understanding of the code structure. Inheritance facilitates code hierarchy, while polymorphism allows for flexible and 
+dynamic behavior. By embracing OOP principles, developers can create scalable and maintainable systems, making it easier
+to adapt to evolving project requirements. Python's syntax and simplicity make it an excellent choice for implementing 
+OOP concepts, contributing to the language's widespread popularity for diverse software development needs.
